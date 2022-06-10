@@ -54,5 +54,32 @@ public class Main {
             System.out.println(year + " год не является високосным!");
         }
 
+        System.out.println("Задача №4");
+
+        /* Напишите программу, которая выдает сообщение в консоль:
+        "Потребуется дней: " + срок доставки.
+        Правила доставки такие:
+        Доставка в пределах 20 км занимает сутки
+        Доставка в пределах от 20 км до 60 км добавляет еще один день доставки
+        Доставка в пределах 60 км до 100 км добавляет еще одни сутки.
+        То есть с каждым следующим интервалом доставки срок увеличивается на 1 день.
+        Объявите целочисленную переменную deliveryDistance = 95, которая содержит дистанцию до клиента.
+        */
+
+        int deliveryDistance = 95;
+        int day = 1;
+        if(deliveryDistance <=20) {
+            System.out.println("Потребуется дней " + day);
+        }else{
+            if (deliveryDistance >= 20 && deliveryDistance < 60)
+                System.out.println("Потребуется дней " + day*2);
+            else
+                if(deliveryDistance >= 60 && deliveryDistance <100)
+                System.out.println("Потребуется дней " + day * 3);
+                else
+                    if(deliveryDistance >=100)
+                        System.out.println("Потребуется более 3 дней.");
+
+        }
+        }
     }
-}
