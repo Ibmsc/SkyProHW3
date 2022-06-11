@@ -81,5 +81,34 @@ public class Main {
                         System.out.println("Потребуется более 3 дней.");
 
         }
+
+        System.out.println("Задача №5");
+
+        int monthNumber = 12;
+
+        switch (monthNumber) {
+            case 1:
+            case 2:
+            case 12:
+                System.out.println("Зимний месяц!");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("Весенний месяц!");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("Летний месяц!");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("Осенний месяц!");
+                break;
+            default:
+                System.out.println("Такого месяца нет");
+        }
         }
     }
